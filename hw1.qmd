@@ -5,7 +5,7 @@ toc: true
 title-block-banner: true
 title-block-style: default
 format: html
-#format: pdf
+format: pdf
 ---
 
 [Link to the Github repository](https://github.com/STAT380/hw1.git)
