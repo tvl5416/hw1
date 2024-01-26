@@ -106,6 +106,8 @@ For the following questions, provide your answers in a code cell.
 
 1. What data type does the vector contain?
 
+The vector contains strings with representing numeric value.
+
 1. Create two new vectors called `my_vec_double` and `my_vec_int` which converts `my_vec` to Double & Integer types, respectively, 
 
 1. Create a new vector `my_vec_bool` which comprises of:
