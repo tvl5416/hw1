@@ -323,37 +323,43 @@ Which took longer to run?
 Row wise scan took longer
 
 6.  Repeat this experiment now when:
+
     -   `M` is a $100 \times 100$ matrix
-```{R}
-M1 <- generate_matrix(100)
-list(
-    row_wise_time = time_scan(row_wise_scan, M1),
-    col_wise_time = time_scan(row_wise_scan, M1)
-)
-```
-    
+
+    ```{R}
+    M1 <- generate_matrix(100)
+    list(
+        row_wise_time = time_scan(row_wise_scan, M1),
+        col_wise_time = time_scan(row_wise_scan, M1)
+    )
+    ```
+
     -   `M` is a $1000 \times 1000$ matrix
-```{R}
-M2 <- generate_matrix(1000)
-list(
-    row_wise_time = time_scan(row_wise_scan, M2),
-    col_wise_time = time_scan(row_wise_scan, M2)
-)
-```
-    
+
+    ```{R}
+    M2 <- generate_matrix(1000)
+    list(
+        row_wise_time = time_scan(row_wise_scan, M2),
+        col_wise_time = time_scan(row_wise_scan, M2)
+    )
+    ```
+
     -   `M` is a $5000 \times 5000$ matrix
-```{R}
-M3 <- generate_matrix(5000)
-list(
-    row_wise_time = time_scan(row_wise_scan, M3),
-    col_wise_time = time_scan(row_wise_scan, M3)
-)
-```
-    
+
+    ```{R}
+    M3 <- generate_matrix(5000)
+    list(
+        row_wise_time = time_scan(row_wise_scan, M3),
+        col_wise_time = time_scan(row_wise_scan, M3)
+    )
+    ```
 
 What can you conclude?
 
-I can conclude that col_wise_scan likely performs faster than row_wise_scan for large matrices, due to R's column-major order of matrix storage, which allows more efficient memory access during column-wise operations.
+I can conclude that col_wise_scan likely performs faster than
+row_wise_scan for large matrices, due to R's column-major order of
+matrix storage, which allows more efficient memory access during
+column-wise operations.
 
 <br><br><br><br> <br><br><br><br> ---
 
